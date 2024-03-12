@@ -3,8 +3,8 @@
 rem Get thinkremote root directory
 for %%I in ("%~dp0") do set "ROOT_DIR=%%~fI"
 
-set SERVICE_NAME=thinkremotesvc
-set SERVICE_BIN="%ROOT_DIR%\thinkremotesvc.exe"
+set SERVICE_NAME=think-remote
+set SERVICE_BIN="%ROOT_DIR%\service.exe"
 set SERVICE_START_TYPE=auto
 
 rem Check if thinkremotesvc already exists
@@ -24,7 +24,7 @@ rem Run the sc command to create/reconfigure the service
 sc %SC_CMD% %SERVICE_NAME% binPath= %SERVICE_BIN% start= %SERVICE_START_TYPE%
 
 rem Set the description of the service
-sc description %SERVICE_NAME% "Sunshine is a self-hosted game stream host for Moonlight."
+sc description %SERVICE_NAME% "Thinkmay remote desktop solution"
 
 rem Start the new service
 net start %SERVICE_NAME%
