@@ -1,7 +1,8 @@
-yum install boost-filesystem-1.74.* \
-            boost-locale-1.74.* \
-            boost-log-1.74.* \
-            boost-program-options-1.74.* \
+
+sudo dnf install boost-filesystem-1.81.0 \
+            boost-locale-1.81.0 \
+            boost-log-1.81.0 \
+            boost-program-options-1.81.0 \
             libcap  \
             libcurl  \
             libdrm   \
