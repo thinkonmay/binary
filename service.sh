@@ -1,3 +1,4 @@
+sudo sh start.sh
 echo "[Unit]
 Description=
 After=network.target

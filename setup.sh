@@ -24,7 +24,7 @@ ps -e | grep X >/dev/null
  } || echo "X server failed to start"
 } || echo "X server already running"
 
-sudo yum install boost-filesystem-1.81.0 \
+yum install boost-filesystem-1.81.0 \
             boost-locale-1.81.0 \
             boost-log-1.81.0 \
             boost-program-options-1.81.0 \
@@ -41,5 +41,3 @@ sudo yum install boost-filesystem-1.81.0 \
             numactl-libs   \
             openssl   \
             pulseaudio-libs 
-
-# ./daemon
