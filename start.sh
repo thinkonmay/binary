@@ -1,0 +1,1 @@
+sudo setcap cap_sys_admin+p $(readlink -f $(which ./shmsunshine)) && ./daemon
