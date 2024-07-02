@@ -17,4 +17,4 @@ sudo dnf install boost-filesystem-1.81.0 \
             openssl   \
             pulseaudio-libs  
 
-sudo setcap cap_sys_admin+p $(readlink -f $(which ./shmsunshine)) && sudo ./daemon
+sudo setcap cap_sys_admin+p $(readlink -f $(which ./shmsunshine)) && ./daemon
